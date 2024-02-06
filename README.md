@@ -3,27 +3,39 @@
 
 ---
 
-### 環境需求
+### 執行檔
+
+#### 單抽 
+> pack > bk.exe
+
+#### Powershell 十連抽
+
+    $counter = 0
+    $max_count = 10
+    while ($counter -lt $max_count) {
+        start-process "bk.exe"       
+        start-sleep -seconds 2         
+    $counter++
+    }
+    
+---
+
+### Command 環境需求
 - Python 3.10 (我不確定)
 - 安裝 selenium
 
     ` $pip install selenium `
 
-
-
 ---
 
-### 單抽
-command line
+### Python Command Line
+
+#### 單抽
 
     python bk.py
 
-
----
-
-### 十連抽
- command line
-
+#### 十連抽
+ 
     $counter = 0
     $max_count = 10
     while ($counter -lt $max_count) {
