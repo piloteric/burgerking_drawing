@@ -5,6 +5,11 @@
 
 ### 環境需求
 - Python 3.10 (我不確定)
+- 安裝 selenium
+
+    ` $pip install selenium `
+
+
 
 ---
 
